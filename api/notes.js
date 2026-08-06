@@ -20,7 +20,7 @@ async function readNotes() {
 
 async function writeNotes(notes) {
   await put(NOTES_PATH, JSON.stringify(notes), {
-    access: 'public',
+    access: 'private',
     contentType: 'application/json',
     addRandomSuffix: false,
     allowOverwrite: true,
